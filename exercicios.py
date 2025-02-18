@@ -40,17 +40,30 @@
 # print(emails_unicos)
 
 # 7. Filtragem de Dados - Dada uma lista de idades, filtrar apenas aquelas que são maiores ou iguais a 18.
-idades = [5, 7, 11, 17, 19, 18, 3, 22, 54]
+# idades = [5, 7, 11, 17, 19, 18, 3, 22, 54]
 
-def maioridade(n):
-    if n >= 18:
-        return True
-    else:
-        return False
-adultos = list(filter(maioridade, idades))
-print(adultos)
+# def maioridade(n):
+#     if n >= 18:
+#         return True
+#     else:
+#         return False
+# adultos = list(filter(maioridade, idades))
+# print(adultos)
 
-#Outra solução possível:
-idades = [5, 7, 11, 17, 19, 18, 3, 22, 54]
-maioridade = [idade for idade in idades if idade >= 18]
-print(maioridade)
+# #Outra solução possível:
+# idades = [5, 7, 11, 17, 19, 18, 3, 22, 54]
+# maioridade = [idade for idade in idades if idade >= 18]
+# print(maioridade)
+
+# 8. Ordenação Personalizada - Dada uma lista de dicionários representando pessoas, ordená-las pelo nome.
+pessoas = [
+    {"nome": "Joao", "idade": 33},
+    {"nome": "Stefany", "idade": 30},
+    {"nome": "Carlos", "idade": 2}
+]
+ordenado = []
+for nome in pessoas:
+    ordenado.append(nome["nome"])
+ordenado.sort()
+
+print (ordenado)
