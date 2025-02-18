@@ -90,18 +90,26 @@
 # print(f"Lista de Pares: {pares}\nLista de Impares: {impares}")
 
 # 11. Atualização de Dados - Dada uma lista de dicionários representando produtos, atualizar o preço de um produto específico.
-produtos = [
-    {"id": 1, "nome": "Teclado", "preço": 100},
-    {"id": 2, "nome": "Mouse", "preço": 80},
-    {"id": 3, "nome": "Monitor", "preço": 300}
-]
-produtos[2]["preço"] += 40
+# produtos = [
+#     {"id": 1, "nome": "Teclado", "preço": 100},
+#     {"id": 2, "nome": "Mouse", "preço": 80},
+#     {"id": 3, "nome": "Monitor", "preço": 300}
+# ]
+# produtos[2]["preço"] += 40
 
-print(produtos)
+# print(produtos)
 
-# Outra solução possível:
-for produto in produtos:
-    if produto["id"] == 1:
-        produto["preço"] += 75
+# # Outra solução possível:
+# for produto in produtos:
+#     if produto["id"] == 1:
+#         produto["preço"] += 75
 
-print(produtos)
+# print(produtos)
+
+# 12. Fusão de Dicionários - Dados dois dicionários, fundi-los em um único dicionário.
+dic1 = {"a": 1, "b": 2}
+dic2 = {"c": 3, "d": 4}
+
+dic3 = dic1 | dic2 # o | para unir dicionários só começou a partir do Python 3.9
+
+print(dic3)
