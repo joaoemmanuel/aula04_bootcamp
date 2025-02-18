@@ -118,7 +118,19 @@
 # print(filtrado)
 
 # 14. Extração de Chaves e Valores - Dado um dicionário, criar listas separadas para suas chaves e valores.
-dic = {"a": 1, "b": 2, "c": 3}
-chaves = list(dic.keys())
-vals = list(dic.values())
-print(f"Chaves: {chaves}\nValores: {vals}")
+# dic = {"a": 1, "b": 2, "c": 3}
+# chaves = list(dic.keys())
+# vals = list(dic.values())
+# print(f"Chaves: {chaves}\nValores: {vals}")
+
+# 15. Contagem de Frequência de Itens - Dada uma string, contar a frequência de cada caractere usando um dicionário.
+texto = "engenharia de dados"
+frequencia = {}
+
+for caracter in texto:
+    if caracter in frequencia:
+        frequencia[caracter] += 1
+    else:
+        frequencia[caracter] = 1
+
+print(frequencia) 
