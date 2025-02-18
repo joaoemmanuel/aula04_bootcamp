@@ -50,20 +50,33 @@
 # adultos = list(filter(maioridade, idades))
 # print(adultos)
 
-# #Outra solução possível:
+# # Outra solução possível:
 # idades = [5, 7, 11, 17, 19, 18, 3, 22, 54]
 # maioridade = [idade for idade in idades if idade >= 18]
 # print(maioridade)
 
 # 8. Ordenação Personalizada - Dada uma lista de dicionários representando pessoas, ordená-las pelo nome.
-pessoas = [
-    {"nome": "Joao", "idade": 33},
-    {"nome": "Stefany", "idade": 30},
-    {"nome": "Carlos", "idade": 2}
-]
-ordenado = []
-for nome in pessoas:
-    ordenado.append(nome["nome"])
-ordenado.sort()
+# pessoas = [
+#     {"nome": "Joao", "idade": 33},
+#     {"nome": "Stefany", "idade": 30},
+#     {"nome": "Carlos", "idade": 2}
+# ]
+# ordenado = []
+# for nome in pessoas:
+#     ordenado.append(nome["nome"])
+# ordenado.sort()
+# 
+# Outra solução possível:
+# pessoas.sort(key=lambda pessoa: pessoa["nome"])
 
-print (ordenado)
+# print(pessoas)
+
+# print (ordenado)
+
+# 9. Agregação de Dados - Dado um conjunto de números, calcular a média.
+from statistics import fmean
+numeros = [5, 10, 22, 31, 57]
+print(fmean(numeros))
+
+# Outra solução possível:
+print(sum(numeros) / len(numeros))
