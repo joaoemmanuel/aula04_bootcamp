@@ -74,9 +74,17 @@
 # print (ordenado)
 
 # 9. Agregação de Dados - Dado um conjunto de números, calcular a média.
-from statistics import fmean
-numeros = [5, 10, 22, 31, 57]
-print(fmean(numeros))
+# from statistics import fmean
+# numeros = [5, 10, 22, 31, 57]
+# print(fmean(numeros))
 
-# Outra solução possível:
-print(sum(numeros) / len(numeros))
+# # Outra solução possível:
+# print(sum(numeros) / len(numeros))
+
+# 10. Divisão de Dados em Grupos - Dada uma lista de valores, dividir em lista uma para valores pares e outra para ímpares.
+valores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+pares = [valor for valor in valores if valor % 2 == 0]
+impares = [valor for valor in valores if valor % 2 != 0]
+
+print(f"Lista de Pares: {pares}\nLista de Impares: {impares}")
