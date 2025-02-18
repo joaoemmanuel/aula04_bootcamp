@@ -11,9 +11,9 @@
 
 # 3. Crie um dicionário para armazenar informações de um livro, incluindo título, autor e ano de publicação. 
 # Imprima cada informação.
-livros = {'Nome:':"The Hellbound Heart", 'Autor:':"Clive Barker", 'Ano:':"1986"}
-for chave, valor in livros.items():
-    print(f"{chave} {valor}")
+# livros = {'Nome:':"The Hellbound Heart", 'Autor:':"Clive Barker", 'Ano:':"1986"}
+# for chave, valor in livros.items():
+#     print(f"{chave} {valor}")
 
 # 4. Escreva um programa que conta o número de ocorrências de cada caractere em uma 
 # string usando um dicionário.
