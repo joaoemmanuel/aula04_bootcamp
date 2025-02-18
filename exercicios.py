@@ -29,12 +29,28 @@
 
 # 5. Dada a lista ["maçã", "banana", "cereja"] e o dicionário {"maçã": 0.45, "banana": 0.30, "cereja": 0.65},
 # calcule o preço total da lista de compras.
-frutas = ["maçã", "banana", "cereja"]
-precos = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
-total = sum(precos[item] for item in frutas)
-print(f"Preço total: {total}")
+# frutas = ["maçã", "banana", "cereja"]
+# precos = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
+# total = sum(precos[item] for item in frutas)
+# print(f"Preço total: {total}")
 
 # 6. Eliminação de Duplicatas - Dada uma lista de emails, remover todos os duplicados.
-emails = ["abc@email.com", "cba@email.com", "abc@email.com", "123@email.com"]
-emails_unicos = list(set(emails))
-print(emails_unicos)
+# emails = ["abc@email.com", "cba@email.com", "abc@email.com", "123@email.com"]
+# emails_unicos = list(set(emails))
+# print(emails_unicos)
+
+# 7. Filtragem de Dados - Dada uma lista de idades, filtrar apenas aquelas que são maiores ou iguais a 18.
+idades = [5, 7, 11, 17, 19, 18, 3, 22, 54]
+
+def maioridade(n):
+    if n >= 18:
+        return True
+    else:
+        return False
+adultos = list(filter(maioridade, idades))
+print(adultos)
+
+#Outra solução possível:
+idades = [5, 7, 11, 17, 19, 18, 3, 22, 54]
+maioridade = [idade for idade in idades if idade >= 18]
+print(maioridade)
