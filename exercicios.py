@@ -60,18 +60,16 @@
 #     {"nome": "Joao", "idade": 33},
 #     {"nome": "Stefany", "idade": 30},
 #     {"nome": "Carlos", "idade": 2}
-# ]
+# 
 # ordenado = []
 # for nome in pessoas:
 #     ordenado.append(nome["nome"])
 # ordenado.sort()
-# 
-# Outra solução possível:
+# print(ordenado)
+
+# Outra solução possível que modifica diretamente o dicionário e é a mais adequada:
 # pessoas.sort(key=lambda pessoa: pessoa["nome"])
-
 # print(pessoas)
-
-# print (ordenado)
 
 # 9. Agregação de Dados - Dado um conjunto de números, calcular a média.
 # from statistics import fmean
@@ -107,9 +105,14 @@
 # print(produtos)
 
 # 12. Fusão de Dicionários - Dados dois dicionários, fundi-los em um único dicionário.
-dic1 = {"a": 1, "b": 2}
-dic2 = {"c": 3, "d": 4}
+# dic1 = {"a": 1, "b": 2}
+# dic2 = {"c": 3, "d": 4}
 
-dic3 = dic1 | dic2 # o | para unir dicionários só começou a partir do Python 3.9
+# dic3 = dic1 | dic2 # o | para unir dicionários só começou a partir do Python 3.9
 
-print(dic3)
+# print(dic3)
+
+# 13. Filtragem de Dados em Dicionário - Dado um dicionário de estoque de produtos, filtrar aqueles com quantidade maior que 0.
+estoque = {"Teclado": 10, "Mouse": 0, "Monitor": 3, "CPU": 0}
+filtrado = {chave: valor for chave, valor in estoque.items() if valor > 0}
+print(filtrado)
