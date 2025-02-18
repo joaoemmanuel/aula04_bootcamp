@@ -113,6 +113,12 @@
 # print(dic3)
 
 # 13. Filtragem de Dados em Dicionário - Dado um dicionário de estoque de produtos, filtrar aqueles com quantidade maior que 0.
-estoque = {"Teclado": 10, "Mouse": 0, "Monitor": 3, "CPU": 0}
-filtrado = {chave: valor for chave, valor in estoque.items() if valor > 0}
-print(filtrado)
+# estoque = {"Teclado": 10, "Mouse": 0, "Monitor": 3, "CPU": 0}
+# filtrado = {chave: valor for chave, valor in estoque.items() if valor > 0}
+# print(filtrado)
+
+# 14. Extração de Chaves e Valores - Dado um dicionário, criar listas separadas para suas chaves e valores.
+dic = {"a": 1, "b": 2, "c": 3}
+chaves = list(dic.keys())
+vals = list(dic.values())
+print(f"Chaves: {chaves}\nValores: {vals}")
