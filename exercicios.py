@@ -82,9 +82,26 @@
 # print(sum(numeros) / len(numeros))
 
 # 10. Divisão de Dados em Grupos - Dada uma lista de valores, dividir em lista uma para valores pares e outra para ímpares.
-valores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# valores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-pares = [valor for valor in valores if valor % 2 == 0]
-impares = [valor for valor in valores if valor % 2 != 0]
+# pares = [valor for valor in valores if valor % 2 == 0]
+# impares = [valor for valor in valores if valor % 2 != 0]
 
-print(f"Lista de Pares: {pares}\nLista de Impares: {impares}")
+# print(f"Lista de Pares: {pares}\nLista de Impares: {impares}")
+
+# 11. Atualização de Dados - Dada uma lista de dicionários representando produtos, atualizar o preço de um produto específico.
+produtos = [
+    {"id": 1, "nome": "Teclado", "preço": 100},
+    {"id": 2, "nome": "Mouse", "preço": 80},
+    {"id": 3, "nome": "Monitor", "preço": 300}
+]
+produtos[2]["preço"] += 40
+
+print(produtos)
+
+# Outra solução possível:
+for produto in produtos:
+    if produto["id"] == 1:
+        produto["preço"] += 75
+
+print(produtos)
