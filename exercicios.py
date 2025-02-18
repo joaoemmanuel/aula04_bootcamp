@@ -33,3 +33,8 @@ frutas = ["maçã", "banana", "cereja"]
 precos = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
 total = sum(precos[item] for item in frutas)
 print(f"Preço total: {total}")
+
+# 6. Eliminação de Duplicatas - Dada uma lista de emails, remover todos os duplicados.
+emails = ["abc@email.com", "cba@email.com", "abc@email.com", "123@email.com"]
+emails_unicos = list(set(emails))
+print(emails_unicos)
